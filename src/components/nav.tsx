@@ -30,19 +30,19 @@ export default function Nav() {
 
     return (<>
         <nav className="w-full h-14 grid grid-cols-12 grid-rows-1 p-4">
-            <Link href="/" className="text-xl col-start-1 row-start-1 hover:scale-105">
+            <Link href="/" className="text-xl col-start-1 row-start-1 hover:font-bold">
                 e@web:{pathname}
             </Link>
-            <Link href="/" className="text-xl col-start-4 lg:col-start-7 row-start-1 hover:scale-105">
+            <Link href="/" className="text-xl col-start-4 lg:col-start-7 row-start-1 hover:font-bold">
                 /
             </Link>
-            <Link href="/about" className="text-xl col-start-6 lg:col-start-8 row-start-1 hover:scale-105">
+            <Link href="/about" className="text-xl col-start-6 lg:col-start-8 row-start-1 hover:font-bold">
                 /about
             </Link>
-            <Link href="/portfolio" className="text-xl col-start-8 lg:col-start-9 row-start-1 hover:scale-105">
+            <Link href="/portfolio" className="text-xl col-start-8 lg:col-start-9 row-start-1 hover:font-bold">
                 /portfolio
             </Link>
-            <Link href="/posts" className="text-xl col-start-10 lg:col-start-10 row-start-1 hover:scale-105">
+            <Link href="/posts" className="text-xl col-start-10 lg:col-start-10 row-start-1 hover:font-bold">
                 /posts
             </Link>
             <button onClick={toggleDarkMode} className="col-start-12 row-start-1">
