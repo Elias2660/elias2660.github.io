@@ -1,34 +1,54 @@
+import Rutgers from "public/logos/rutgers.png";
+import ResumeItem from "@/components/resumeItem";
+import StuyLogo from "public/logos/Stuyvesant_High_School_logo.svg";
+import Insta from "public/instagram.svg";
+import Linkedin from "public/linkedin.svg";
+import Github from "public/github.svg";
+import Facebook from "public/facebook.svg";
+import Image from "next/image";
+import Sunset from "public/sunset.jpg"
+
 
 export default function About() {
     return (<>
-        <div className="h-[60vh] w-full grid grid-cols-12 grid-rows-12 ">
-            <div className="relative inline-block ml-4 mt-4 col-start-1 col-span-full row-start-2 row-span-1 ">
+        <div className="h-[80vh] md:h-[70vh] w-full grid grid-cols-12 grid-rows-12 ">
+            <div className="relative inline-block ml-4 mt-4 col-start-1 col-span-full row-start-1 sm:row-start-2 row-span-1 ">
                 <h1 className="text-7xl">
                     About Me
                 </h1>
                 <span className="gap-x-0 mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-cyan-600 h-5 w-[22rem]" />
             </div>
-            <p className="text-xl font-light col-start-2 col-end-11 row-start-6 row-end-12 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div className="col-start-7 col-span-4 row-start-3 row-span-full -z-20 bg-slate-600" />
+            <p className="text-lg sm:text-base lg:text-xl ml-10 font-light col-start-1 col-end-11 row-start-3 sm:row-start-4 lg:row-start-4 row-end-12 sm:col-end-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            {/* future image here */}
+            <Image src={Sunset} alt="sunset in nyc" className="invisible sm:visible dark:brightness-90 dark:contrast-100 brightness-125 contrast-75 col-start-4 col-end-11 sm:col-start-6 md:col-start-7  md:col-end-11 lg:col-start-7 sm:col-end-12 row-start-3 text-sm sm:text-base row-span-full -z-20" />
+            <div className="col-start-2 col-span-6 row-start-11 sm:row-start-10 row-span-full relative inline-block">
+                <p className="text-lg">
+                    Socials
+                </p>
+                <span className="gap-x-0 mt-3 absolute opacity-75 inset-0 bottom-1 -z-10 bg-red-700 h-3 w-[4rem]" />
+            </div>
+            <div className="row-start-12 sm:row-start-11 col-start-2 col-end-11 sm:col-end-6 lg:col-end-4 flex justify-between align-middle">
+                <a href="https://www.linkedin.com/in/elias-xu-300388282/" className="z-10 hover:-translate-y-2 hover:scale-105"><Image src={Linkedin} alt="Linkedin" className={`w-8 h-8 dark:invert`} /></a>
+                <a href="https://www.instagram.com/piquantreward/" className="z-10 hover:-translate-y-2 hover:scale-105"><Image src={Insta} alt="Instagram" className={`w-8 h-8 dark:invert`} /></a>
+                <a href="https://github.com/Elias2660" className="z-10 hover:-translate-y-2 hover:scale-105"><Image src={Github} alt="Github" className={`w-8 h-8 dark:invert`} /></a>
+                <a href="https://www.facebook.com/profile.php?id=100060917898759" className="z-10 hover:-translate-y-2 hover:scale-105"><Image src={Facebook} alt="Facebook" className={`w-8 h-8 dark:invert`} /></a>
+            </div>
         </div>
         <div className="h-[100vh] w-full grid grid-cols-12 grid-rows-12" >
-            <div className="relative inline-block col-start-2 col-span-full row-start-2 row-span-1 ">
-                <h1 className="text-5xl underline">
+            <div className="relative inline-block col-start-1 sm:col-start-2 ml-2 sm:ml-0 col-span-full row-start-2 row-span-1 ">
+                <h1 className="text-4xl sm:text-5xl underline">
                     Work Experience
                 </h1>
-                <span className="gap-x-0 mt-8 absolute opacity-75 inset-0 bottom-1 -z-10 bg-green-700 h-5 w-[25rem]" />
+                <span className="gap-x-0 mt-8 absolute opacity-75 inset-0 bottom-1 -z-10 bg-green-700 h-5 w-[20rem] sm:w-[25rem]" />
             </div>
-            <div className="col-start-2 col-end-11 row-start-3 row-span-3">
-                <div className="h-full w-full grid grid-cols-12 grid-rows-2 gap-5">
-                    <div className="bg-slate-500 col-start-1 col-span-2 row-start-1 row-span-1" />
-                    <div className="col-start-3 col-span-full row-start-1 row-span-full">
-                        <h1 className="text-3xl">Researcher</h1>
-                        <p className="text-base">Rutgers Winlab</p>
-                        <p className="text-base">New Brunswick</p>
-                        <p className="text-sm">May 2021 - August 2021</p>
-
-                    </div>
-                </div>
+            <div className="col-start-2 col-end-11 row-start-3 row-span-1">
+                <ResumeItem
+                    title="Researcher"
+                    organization="Rutgers Winlab"
+                    date="August 2023 - Present"
+                    image={Rutgers}
+                    description="Analyze bee image data using machine learning; study the impact of electromagnetic waves on bees; rewrite data pipeline"
+                />
             </div>
 
         </div>
@@ -39,17 +59,34 @@ export default function About() {
                 </h1>
                 <span className="gap-x-0 mt-8 absolute opacity-75 inset-0 bottom-1 -z-10 bg-orange-700 h-5 w-[15rem]" />
             </div>
-            <div className="col-start-2 col-end-11 row-start-3 row-span-3">
-                <div className="h-full w-full grid grid-cols-12 grid-rows-2 gap-5">
-                    <div className="bg-slate-500 col-start-1 col-span-2 row-start-1 row-span-1" />
-                    <div className="col-start-3 col-span-full row-start-1 row-span-full">
-                        <h1 className="text-3xl">Researcher</h1>
-                        <p className="text-base">Rutgers Winlab</p>
-                        <p className="text-base">New Brunswick</p>
-                        <p className="text-sm">May 2021 - August 2021</p>
-                    </div>
-                </div>
+            <div className="col-start-2 col-end-11 row-start-3 row-span-1">
+                <ResumeItem
+                    title="High School"
+                    organization="Stuyvesant High School"
+                    date="August 2023 - Present"
+                    image={StuyLogo}
+                    description="Analyze bee image data using machine learning; study the impact of electromagnetic waves on bees; rewrite data pipeline"
+                />
             </div>
+        </div>
+
+        <div className="h-[100vh] w-full grid grid-cols-12 grid-rows-12" >
+            <div className="relative inline-block col-start-2 col-span-full row-start-2 row-span-1 ">
+                <h1 className="text-5xl underline">
+                    Awards
+                </h1>
+                <span className="gap-x-0 mt-8 absolute opacity-75 inset-0 bottom-1 -z-10 bg-amber-800 h-5 w-[11rem]" />
+            </div>
+            <div className="col-start-2 col-end-11 row-start-3 row-span-1">
+                <ResumeItem
+                    title="Researcher"
+                    organization="Rutgers Winlab"
+                    date="August 2023 - Present"
+                    image={Rutgers}
+                    description="Analyze bee image data using machine learning; study the impact of electromagnetic waves on bees; rewrite data pipeline"
+                />
+            </div>
+
         </div>
     </>)
 }
