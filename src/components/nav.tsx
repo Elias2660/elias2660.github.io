@@ -31,11 +31,11 @@ export default function Nav() {
     };
 
     return (<>
-        <nav className="w-full h-14 grid grid-cols-12 grid-rows-1 p-4">
-            <Link href="/" className="text-xl col-start-1 row-start-1 font-bold hover:font-extrabold">
+        <nav className="w-full h-[10vh] grid grid-cols-12 grid-rows-1 items-center">
+            <Link href="/" className="pl-4 cols-span-2 text-xl col-start-1 row-start-1 font-bold hover:font-extrabold">
                 elias@web:{pathname}
             </Link>
-            <div className="col-start-5 md:col-start-6 lg:col-start-8 col-end-11 row-start-1 flex justify-between">
+            <div className="items-center col-start-5 md:col-start-6 lg:col-start-8 col-end-11 row-start-1 flex justify-between">
                 <Link href="/" className="invisible sm:visible text-xl row-start-1 hover:font-bold">
                     /
                 </Link>
@@ -53,16 +53,16 @@ export default function Nav() {
                 <Image
                     src={isDarkMode ? Sun : Moon}
                     alt={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
-                    className="h-7 w-7 align-middle hover:scale-105"
+                    className="w-7 h-7 hover:scale-105"
                 />
             </button>
             {/* the dropdown */}
-            <div className="visible sm:invisible group inline-block relative col-start-12 row-start-1 h-14 w-10">
+            <div className="visible sm:invisible group inline-block relative col-start-12 row-start-1">
                 <button className="visible sm:invisible">
                     <Image
                         src={isDarkMode ? lightMenu : darkMenu}
                         alt={isDarkMode ? "light Menu" : "dark Menu"}
-                        className="h7 w-7 align-middle hover:scale-105"
+                        className="h-7 w-7 hover:scale-105"
                     />
                 </button>
                 <div className="invisible group-hover:visible absolute right-3 z-10">
