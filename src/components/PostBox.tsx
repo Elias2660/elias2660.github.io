@@ -27,7 +27,7 @@ export default function PostBox(props:PostBoxProps) {
         </div>
 
         <div className="group col-start-8 md:col-start-5 col-span-full md:col-span-full row-start-12 md:row-start-11 row-span-3">
-            <Link target="_blank" className="flex flex-row align-middle items-center" href={`/posts/${props.id}`}>
+            <Link className="flex flex-row align-middle items-center" href={`/posts/${props.id}`}>
                 <p className="group-hover:font-bold underline font-light text-base md:text-base lg:text-xl">Check Out More</p>
                 <Image src={UpRightArrow} alt="arrow" className="dark:invert w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 group-hover:-translate-y-1" />
             </Link>

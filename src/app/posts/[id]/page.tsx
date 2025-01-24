@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: Promise<Params> }) {
     return (
         <>
             {postData !== null && (
-                <div className="prose">
+                <div className="prose contrast-200 dark:invert text-black">
                     <div className="ml-4" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                 </div>
             )}
