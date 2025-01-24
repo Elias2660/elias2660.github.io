@@ -1,4 +1,4 @@
-
+// https://nextjs.org/learn-pages-router/basics/dynamic-routes/render-markdown
 export default function Posts() {
     return (<>
         <div className="w-full h-[40vh] grid grid-cols-12 grid-rows-12 ">
