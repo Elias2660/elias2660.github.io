@@ -1,13 +1,9 @@
 
 // https://nextjs.org/learn-pages-router/basics/dynamic-routes/render-markdown
 
+// path: src/app/posts/[id]/page.tsx
 
-
-interface Params {
-    id: string;
-}
-
-export default async function page({ params }: { params: Promise<Params> }) {
-    const id = (await params).id;
-    return <div>My Post: {id}</div>
+export default async function Page({ params }: { params: { id: Promise<string> } }) {
+    const id = await params.id;
+    return <div>My Post: {id}</div>;
 }
