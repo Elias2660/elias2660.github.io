@@ -37,7 +37,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Licening
 
-This project is Licensed under the MIT liscense, if you would want to take some of the code for yourself.
+This project is licensed under the MIT liscense, if you would want to take some of the code for yourself.
 
 ## Contribution
 
