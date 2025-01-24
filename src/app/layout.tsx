@@ -3,6 +3,7 @@ import "./globals.css";
 import Nav from "@/components/nav";
 import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
+import Providers from "@/app/providers";
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
     subsets: ['latin'],
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
 
     return (
-        <html id="top" lang="en" className={themeClass}>
+        <html id="top" lang="en" className={themeClass} suppressHydrationWarning>
             <head>
                 <link
                     rel="icon"
@@ -36,9 +37,11 @@ export default function RootLayout({
             <body
                 className={`dark:bg-black dark:text-white light:bg-white light:text-black  ${inter.className}`}
             >
-                <Nav />
-                {children}
-                <Footer />
+                <Providers >
+                    <Nav />
+                    {children}
+                    <Footer />
+                </Providers>
             </body>
         </html>
     );
