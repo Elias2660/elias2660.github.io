@@ -17,13 +17,14 @@ export default function Portfolio() {
             </div>
         </div>
         {/* container for the  */}
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full flex justify-center items-center flex-col">
             <ProjectItem
                 title="Senior Caucus Website"
                 description="A website for the Senior Caucus"
                 image={SeniorCaucusWebsite}
                 link="https://github.com/Senior-Caucus/Senior-Caucus-Website"
             />
+        
         </div>
         <div>
         </div>
