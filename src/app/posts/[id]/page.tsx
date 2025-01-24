@@ -19,6 +19,6 @@ export async function generateStaticParams(): Promise<Params[]> {
 }
 
 export default async function page({ params }: { params: Params }) {
-    const id = await params.id;
+    const { id } = params;
     return <div>My Post: {id}</div>;
 }
