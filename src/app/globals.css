@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.post-content {
+    font-weight: default;
+    font-size:default;
+}
