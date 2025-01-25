@@ -6,6 +6,16 @@ import Github from "public/github.svg";
 import Facebook from "public/facebook.svg";
 import Image from "next/image";
 import Sunset from "public/sunset.jpg"
+import MeiWahImage from "public/logos/MeiWah.png";
+import CityGrowers from "public/logos/city_growers.png";
+import StuyLogo from "public/logos/Stuyvesant_High_School_logo.svg";
+import UPennClassics from "public/logos/UPennClassics.png";
+import CornellLogo from "public/logos/cornell.png";
+import AstorApiaries from "public/logos/AstorApiaries.png";
+import USACOlogo from "public/logos/USACOlogo.png";
+import HRAS from "public/logos/HRAS.jpeg";
+
+import NJCLlogo from "public/logos/njcl.png";
 
 
 export default function About() {
@@ -17,7 +27,9 @@ export default function About() {
                 </h1>
                 <span className="gap-x-0 mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-cyan-600 h-5 w-[22rem]" />
             </div>
-            <p className="text-base sm:text-base lg:text-xl ml-10 font-light col-start-1 col-end-11 row-start-3 sm:row-start-4 lg:row-start-4 row-end-12 sm:col-end-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className="text-base sm:text-base lg:text-xl ml-10 font-light col-start-1 col-end-11 row-start-3 sm:row-start-4 lg:row-start-4 row-end-12 sm:col-end-7">
+                Here’s a short list of my professional activities for the past few years. Most of my coding projects will either be in the portfolio section of this website, or on my Github. I usually don’t post on Insta or Facebook, but I’ve also listed it for fun.
+            </p>
             {/* future image here */}
             <Image src={Sunset} alt="sunset in nyc" className="blur-md sm:blur-none dark:brightness-90 dark:contrast-100 brightness-125 contrast-75 col-start-4 col-end-11 sm:col-start-6 md:col-start-7  md:col-end-11 lg:col-start-7 sm:col-end-12 row-start-3 text-sm sm:text-base row-span-full -z-20" />
             <div className="col-start-2 col-span-6 row-start-11 sm:row-start-10 row-span-full relative inline-block">
@@ -47,20 +59,40 @@ export default function About() {
             </div>
             <ResumeItem
                 title="Researcher"
-                organization="Rutgers Winlab"
+                organization="Rutgers WINLAB (Wireless Information Network Laboratory)"
                 date="August 2023 - Present"
                 image={Rutgers}
-                description="Analyze bee image data using machine learning; study the impact of electromagnetic waves on bees; rewrite data pipeline"
+                description="Analyze bee image data using machine learning; study the impact of electromagnetic waves on bees; rewrite data pipeline for the project"
             />
             <div className="w-full h-10" />
             <ResumeItem
-                title="Researcher"
-                organization="Rutgers Winlab"
-                date="August 2023 - Present"
-                image={Rutgers}
-                description="Analyze bee image data using machine learning; study the impact of electromagnetic waves on bees; rewrite data pipeline"
+                title="Assistant Teacher"
+                organization="Mei Wah School"
+                date="May 2023 - August 2024"
+                image={MeiWahImage}
+                description="Teach robotics and music to 30+ students; coordinate activities; set up class materials; redesign school site"
             />
-            <div className="w-full h-[10vh] " />
+            <div className="w-full h-10 " />
+
+            <ResumeItem
+                title="Assistant Beekeeper"
+                organization="City Growers"
+                date="July 2022 - August 2023"
+                image={CityGrowers}
+                description="Manage rooftop hives across the city, along with working with other aspects of environemtalism"
+            />
+
+            <div className="w-full h-10 " />
+
+            <ResumeItem
+                title="Assistant Beekeeper"
+                organization="Hudson River Apiary Society"
+                date="June 2022 - Present"
+                image={HRAS}
+                description="Worked with head for beekeeping, community outreach, and grant writing."
+            />
+
+            <div className="w-full h-10 " />
 
             {/* EDUCATION */}
             <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
@@ -70,6 +102,36 @@ export default function About() {
                 <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-purple-800 h-5 w-[11rem] sm:w-[14.5rem]" />
             </div>
 
+            <ResumeItem
+                title="Undergraduate"
+                organization="Cornell College of Engineering"
+                date="Class of 2029"
+                image={CornellLogo}
+                description="Rising Freshman"
+            />
+
+            <div className="w-full h-10 " />
+
+            <ResumeItem
+                title="High School Diploma"
+                organization="Stuyvesant High School"
+                date="Class of 2025"
+                image={StuyLogo}
+                description="Stuyvesant Environmental Club, Stuy Senior / Junior Caucus, National Honor Society, CSdojo, stuyai, Latin Classics, Big Sibs"
+            />
+
+            <div className="w-full h-10 " />
+
+            <ResumeItem
+                title="Beekeeping Apprenticeship"
+                organization="Astor Apiaries"
+                date="November 2021 - November 2022"
+                image={AstorApiaries}
+                description="Learned the basics of beekeeping, including hive management, honey extraction, and bee biology"
+            />
+
+            <div className="w-full h-10 " />
+
             {/* AWARDS */}
             <div className="w-[00vw] h-[10vh]" />
             <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
@@ -78,7 +140,43 @@ export default function About() {
                 </h1>
                 <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-amber-700 h-5 w-[9rem] sm:w-[11rem]" />
             </div>
+
+
+            <ResumeItem
+                title="National Latin Exam"
+                organization="National Junior Classical League"
+                date=""
+                image={NJCLlogo}
+                description="2022, 2023, 2024 Summa Cum Laude (Gold)"
+            />
+            <div className="w-full h-10 " />
+            <ResumeItem
+                title="National Medusa Mythology Exam"
+                organization="National Junior Classical League"
+                date=""
+                image={NJCLlogo}
+                description="2022 Silver Medalist, 2023 Gold Medalist, 2024 Bronze Medalist"
+            />
+            <div className="w-full h-10 " />
+            <ResumeItem
+                title="UPenn Certamen"
+                organization="UPenn Classics Comittee"
+                date="2024"
+                image={UPennClassics}
+                description="Semifinalist"
+            />
+            <div className="w-full h-10" />
+            <ResumeItem
+                title="USACO"
+                organization="USA Computing Olympiad"
+                date="2022 December"
+                image={USACOlogo}
+                description="2022 Silver Medalist"
+            />
+            <div className="w-full h-[10vh] " />
         </div>
+
+
 
     </>)
 }

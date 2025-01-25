@@ -40,13 +40,13 @@ export default function Footer() {
                 <Link href="/portfolio" className="hover:font-bold">/portfolio</Link>
                 <Link href="/posts" className="hover:font-bold">/posts</Link>
             </div>
-            <div className="col-start-1 col-span-full row-start-10 row-span-1 text-center">
+            <div className="col-start-1 col-end-8 sm:col-span-full row-start-10 row-span-1 text-center">
                 <p className="text-sm font-semibold">© {year} Elias Xu</p>
             </div>
-            <div className="col-start-1 col-span-full row-start-11 row-span-1 text-center">
+            <div className="col-start-1 col-end-8 sm:col-span-full row-start-11 row-span-1 text-center">
                 <p className="text-sm font-semibold">All rights reserved</p>
             </div>
-            <a href="https://github.com/Elias2660/elias2660.github.io" className="group col-start-11 col-span-full row-start-11 row-span-1 text-left">
+            <a href="https://github.com/Elias2660/elias2660.github.io" className="group col-start-8 sm:col-start-11 col-span-full row-start-11 row-span-1 text-left">
                 <p className="group-hover:font-extrabold text-sm font-semibold inline underline">
                     Check out the source code
                 </p>

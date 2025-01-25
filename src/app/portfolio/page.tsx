@@ -12,7 +12,7 @@ export default function Portfolio() {
             </div>
             <div className="col-start-2 col-span-10 row-start-6 row-span-full">
                 <p className="text-2xl font-light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    Here’s a list of some of my favorite personal projects :)! Don’t hesitate to check them out!
                 </p>
             </div>
         </div>
@@ -24,7 +24,7 @@ export default function Portfolio() {
                 image={SeniorCaucusWebsite}
                 link="https://github.com/Senior-Caucus/Senior-Caucus-Website"
             />
-        
+
         </div>
         <div>
         </div>

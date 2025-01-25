@@ -11,7 +11,7 @@ export default function Posts() {
             </div>
             <div className="col-start-2 col-span-10 row-start-6 row-span-full">
                 <p className="text-2xl font-light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    Here are some random yapps and ramblings; I&apos;ll be posting unoccasionally.
                 </p>
             </div>
         </div>
