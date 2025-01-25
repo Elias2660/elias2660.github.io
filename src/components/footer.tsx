@@ -5,6 +5,7 @@ import Linkedin from "public/linkedin.svg";
 import Github from "public/github.svg";
 import Facebook from "public/facebook.svg"
 import Link from "next/link";
+import UpRightArrow from "public/UpRightArrow.svg";
 
 export default function Footer() {
     const date = new Date();
@@ -45,5 +46,11 @@ export default function Footer() {
             <div className="col-start-1 col-span-full row-start-11 row-span-1 text-center">
                 <p className="text-sm font-semibold">All rights reserved</p>
             </div>
+            <a href="https://github.com/Elias2660/elias2660.github.io" className="group col-start-11 col-span-full row-start-11 row-span-1 text-left">
+                <p className="group-hover:font-extrabold text-sm font-semibold inline underline">
+                    Check out the source code
+                </p>
+                <Image src={UpRightArrow} alt="Up Right Arrow" className="invisible group-hover:visible group-hover:-translate-y-1 w-4 h-4 dark:invert inline" />
+            </a>
         </footer ></>);
 }
