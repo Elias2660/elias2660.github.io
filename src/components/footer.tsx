@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import UpArrow from "public/upArrow.svg";
 import Insta from "public/instagram.svg";
@@ -14,12 +16,12 @@ export default function Footer() {
     return (<>
         <div className="w-full h-10" />
         <footer className="mt-4 w-full h-[35vh] grid grid-cols-12 grid-rows-12 items-center">
-            <a href="#top" className="group col-start-1 col-span-full row-start-1 row-span-1 flex justify-left sm:pl-10 align-middle">
+            <button onClick={() => jump("top")} className="group col-start-1 col-span-full row-start-1 row-span-1 flex justify-left sm:pl-10 align-middle">
                 <Image src={UpArrow} alt="Up Arrow" className="group-hover:-translate-y-1 w-8 h-8 dark:invert" />
                 <p className="mt-1 italic font-light group-hover:underline">
                     Back to top
                 </p>
-            </a>
+            </button>
             <div className="col-start-1 col-span-full row-start-2 row-span-1  text-center">
                 <p className="italic font-light">
                     Socials
@@ -53,4 +55,13 @@ export default function Footer() {
                 <Image src={UpRightArrow} alt="Up Right Arrow" className="invisible group-hover:visible group-hover:-translate-y-1 w-4 h-4 dark:invert inline" />
             </a>
         </footer ></>);
+}
+
+function jump(h:string) {
+    const target = document.getElementById(h);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.warn(`Element with ID "${h}" not found.`);
+    }
 }
