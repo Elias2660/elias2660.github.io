@@ -1,7 +1,9 @@
 
 import ProjectItem from "@/components/ProjectItem";
 import SeniorCaucusWebsite from "public/portfolio/Senior_Caucus_Website.png";
-
+import RutgersBeeImage from "public/portfolio/BeeZ.png";
+import JuniorCaucusWebsite from "public/portfolio/JuniorCaucusWeb.png";
+import ProompterImage from "public/portfolio/Proompter.png";
 
 export default function Portfolio() {
     return (<>
@@ -18,13 +20,33 @@ export default function Portfolio() {
         </div>
         {/* container for the  */}
         <div className="w-full flex justify-center items-center flex-col">
+        <ProjectItem
+                title="Proompter"
+                description="stuyai's discord bot, which allows users to run multiple different models in our server."
+                image={ProompterImage}
+                link="https://github.com/stuyai/Proompter"
+            />
+            <div className="w-full h-10" />
             <ProjectItem
-                title="Senior Caucus Website"
+                title="Unified Bee Runner"
+                description="Unified Bee Runner is a pipeline for processing and analyzing bee-related datasets, built for the Rutgers WINLAB Behavior Analysis Project. This project includes several steps such as dataset creation, video conversion, data splitting, and model training."
+                image={RutgersBeeImage}
+                link="https://github.com/Elias2660/Unified-bee-Runner"
+            />
+            <div className="w-full h-10" />
+            <ProjectItem
+                title="Stuy Senior Caucus Website"
                 description="The Senior Caucus Website! This project is designed to provide information and updates about the Senior Caucus at our school."
                 image={SeniorCaucusWebsite}
                 link="https://github.com/Senior-Caucus/Senior-Caucus-Website"
             />
-
+            <div className="w-full h-10" />
+            <ProjectItem
+                title="Stuy Junior Caucus Website"
+                description="This project was designed to provide information and updates about the Junior Caucus 2023-2024 at our school."
+                image={JuniorCaucusWebsite}
+                link="https://github.com/Junior-Caucus-SU/NextJS-Rewrite"
+            />
         </div>
         <div>
         </div>

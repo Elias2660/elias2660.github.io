@@ -1,6 +1,6 @@
 // https://nextjs.org/learn-pages-router/basics/dynamic-routes/render-markdown
 import PostBox from "@/components/PostBox";
-import Panda from "public/docImages/DALL·E 2022-10-10 14.56.21 - pandas library oil pastel.png";
+import Panda from "public/docImages/Proompter.png";
 import WebsiteImage from "public/docImages/WebsiteHeader.png";
 
 
