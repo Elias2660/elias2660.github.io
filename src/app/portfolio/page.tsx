@@ -20,7 +20,7 @@ export default function Portfolio() {
         <div className="w-full flex justify-center items-center flex-col">
             <ProjectItem
                 title="Senior Caucus Website"
-                description="A website for the Senior Caucus"
+                description="The Senior Caucus Website! This project is designed to provide information and updates about the Senior Caucus at our school."
                 image={SeniorCaucusWebsite}
                 link="https://github.com/Senior-Caucus/Senior-Caucus-Website"
             />

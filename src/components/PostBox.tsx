@@ -21,7 +21,7 @@ export default function PostBox(props:PostBoxProps) {
             </p>
         </div>
         <div className="p-4 md:p-0 col-start-1 md:col-start-5 col-span-full row-start-8 md:row-start-5 row-span-8">
-            <p className="text-sm md:text-base lg:text-xl font-light">
+            <p className="text-base md:text-base lg:text-xl font-light">
                 {props.description}
             </p>
         </div>

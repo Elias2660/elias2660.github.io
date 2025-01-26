@@ -25,7 +25,7 @@ export default function About() {
                 <h1 className="text-7xl">
                     About Me
                 </h1>
-                <span className="gap-x-0 mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-cyan-600 h-5 w-[22rem]" />
+                <span className="gap-x-0 mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-cyan-600 h-5 w-[20.75rem]" />
             </div>
             <p className="text-base sm:text-base lg:text-xl ml-10 font-light col-start-1 col-end-11 row-start-3 sm:row-start-4 lg:row-start-4 row-end-12 sm:col-end-7">
                 Here’s a short list of my professional activities for the past few years. Most of my coding projects will either be in the portfolio section of this website, or on my Github. I usually don’t post on Insta or Facebook, but I’ve also listed it for fun.
@@ -36,7 +36,7 @@ export default function About() {
                 <p className="text-lg">
                     Socials
                 </p>
-                <span className="gap-x-0 mt-3 absolute opacity-75 inset-0 bottom-1 -z-10 bg-red-700 h-3 w-[4rem]" />
+                <span className="gap-x-0 mt-3 absolute opacity-75 inset-0 bottom-1 -z-10 bg-red-700 h-3 w-[3.8rem]" />
             </div>
             <div className="row-start-12 sm:row-start-11 col-start-2 col-end-11 sm:col-end-6 lg:col-end-4 flex justify-between align-middle">
                 <a target="_blank" href="https://www.linkedin.com/in/elias-xu-300388282/" className="z-10 hover:-translate-y-2 hover:scale-105"><Image src={Linkedin} alt="Linkedin" className={`w-8 h-8 dark:invert`} /></a>
@@ -55,7 +55,7 @@ export default function About() {
                 <h1 className="text-4xl sm:text-5xl underline">
                     Work Experience
                 </h1>
-                <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-green-700 h-5 w-[19rem] sm:w-[25rem]" />
+                <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-green-700 h-5 w-[18.15rem] sm:w-[24.25rem]" />
             </div>
             <ResumeItem
                 title="Researcher"
@@ -99,7 +99,7 @@ export default function About() {
                 <h1 className="text-4xl sm:text-5xl underline">
                     Education
                 </h1>
-                <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-purple-800 h-5 w-[11rem] sm:w-[14.5rem]" />
+                <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-purple-800 h-5 w-[10.6rem] sm:w-[14.15rem]" />
             </div>
 
             <ResumeItem
@@ -138,7 +138,7 @@ export default function About() {
                 <h1 className="text-4xl sm:text-5xl underline">
                     Awards
                 </h1>
-                <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-amber-700 h-5 w-[9rem] sm:w-[11rem]" />
+                <span className="ml-10 gap-x-0 mt-8 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-amber-700 h-5 w-[7.9rem] sm:w-[10.5rem]" />
             </div>
 
 
