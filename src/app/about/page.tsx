@@ -14,6 +14,7 @@ import CornellLogo from "public/logos/cornell.png";
 import AstorApiaries from "public/logos/AstorApiaries.png";
 import USACOlogo from "public/logos/USACOlogo.png";
 import HRAS from "public/logos/HRAS.jpeg";
+import ServiceInSchools from "public/logos/ServiceInSchools.png";
 
 import NJCLlogo from "public/logos/njcl.png";
 
@@ -93,6 +94,16 @@ export default function About() {
             />
 
             <div className="w-full h-10 " />
+``
+            <ResumeItem
+                title="Student Teacher"
+                organization="Service in Schools Institute"
+                date="April 2023 - June 2023"
+                image={ServiceInSchools}
+                description="Teach in a group younger students remotely about fast fashion"
+            />
+
+            <div className="w-full h-10 " />
 
             {/* EDUCATION */}
             <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
@@ -156,6 +167,22 @@ export default function About() {
                 date=""
                 image={NJCLlogo}
                 description="2022 Silver Medalist, 2023 Gold Medalist, 2024 Bronze Medalist"
+            />
+            <div className="w-full h-10 " />
+            <ResumeItem
+                title="National Etymology Exam"
+                organization="National Junior Classical League"
+                date=""
+                image={NJCLlogo}
+                description="2023 Silver Medalist, 2024 Bronze Medalist"
+            />
+            <div className="w-full h-10 " />
+            <ResumeItem
+                title="National Vocabulary Exam"
+                organization="National Junior Classical League"
+                date=""
+                image={NJCLlogo}
+                description="2024 Bronze Medalist"
             />
             <div className="w-full h-10 " />
             <ResumeItem
