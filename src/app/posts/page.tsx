@@ -1,6 +1,8 @@
 // https://nextjs.org/learn-pages-router/basics/dynamic-routes/render-markdown
 import PostBox from "@/components/PostBox";
 import Panda from "public/docImages/DALL·E 2022-10-10 14.56.21 - pandas library oil pastel.png";
+import WebsiteImage from "public/docImages/WebsiteHeader.png";
+
 
 export default function Posts() {
     return (<>
@@ -16,6 +18,14 @@ export default function Posts() {
             </div>
         </div>
         <div className="w-full flex justify-center items-center flex-col">
+            <PostBox
+                title="The Readme for this Website"
+                image={WebsiteImage}
+                description="Here's the readme for the website, btw."
+                id="thisreadme"
+            />
+
+            <div className="w-full h-10" />
             <PostBox
                 title="First Test Post"
                 image={Panda}
