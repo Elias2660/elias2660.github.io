@@ -79,7 +79,7 @@ export default function About() {
                 organization="City Growers"
                 date="July 2022 - August 2023"
                 image={CityGrowers}
-                description="Manage rooftop hives across the city, along with working with other aspects of environemtalism"
+                description="Manage rooftop hives across the city, along with working with other aspects of NYC's environmental movement"
             />
 
             <div className="w-full h-10 " />
