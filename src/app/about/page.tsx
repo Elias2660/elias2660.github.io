@@ -21,18 +21,19 @@ import NJCLlogo from "public/logos/njcl.png";
 
 export default function About() {
     return (<>
-        <div className="h-[80vh] md:h-[70vh] w-full grid grid-cols-12 grid-rows-12 ">
+        <div className="h-[55vh] md:h-[65vh] w-full grid grid-cols-12 grid-rows-12 ">
             <div className="relative inline-block ml-4 mt-4 col-start-1 col-span-full row-start-1 sm:row-start-2 row-span-1 ">
                 <h1 className="text-7xl">
                     About Me
                 </h1>
                 <span className="gap-x-0 mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-cyan-600 h-5 w-[20.75rem]" />
             </div>
-            <p className="text-base sm:text-base lg:text-xl ml-10 font-light col-start-1 col-end-11 row-start-3 sm:row-start-4 lg:row-start-4 row-end-12 sm:col-end-7">
+            <p className="text-sm sm:text-base md:text-xl  ml-10 font-light col-start-1 col-end-11 row-start-5 sm:row-start-5  lg:row-start-5 row-end-12 sm:col-end-7">
                 Here’s a short list of my professional activities for the past few years. Most of my coding projects will either be in the portfolio section of this website, or on my Github. I usually don’t post on Insta or Facebook, but I’ve also listed it for fun.
+                Also, here&apos;s a photo of a sunset in NYC.
             </p>
             {/* future image here */}
-            <Image src={Sunset} alt="sunset in nyc" className="blur-md sm:blur-none dark:brightness-90 dark:contrast-100 brightness-125 contrast-75 col-start-4 col-end-11 sm:col-start-6 md:col-start-7  md:col-end-11 lg:col-start-7 sm:col-end-12 row-start-3 text-sm sm:text-base row-span-full -z-20" />
+            <Image src={Sunset} alt="sunset in nyc" className="object-contain w-auto h-full blur-md sm:blur-none dark:brightness-90 dark:contrast-100 brightness-125 contrast-75 col-start-4 col-end-12 sm:col-start-8 md:col-start-8  md:col-end-12 lg:col-start-8 sm:col-end-12 row-start-1 text-sm sm:text-base row-span-full -z-20" />
             <div className="col-start-2 col-span-6 row-start-11 sm:row-start-10 row-span-full relative inline-block">
                 <p className="text-lg">
                     Socials
@@ -48,7 +49,7 @@ export default function About() {
         </div>
 
 
-        <div className="w-full h-10" />
+        <div className="w-full h-2" />
 
         {/* WORK EXPERIENCE */}
         <div className="flex flex-col items-center justify-center w-full">
@@ -63,9 +64,8 @@ export default function About() {
                 organization="Rutgers WINLAB (Wireless Information Network Laboratory)"
                 date="August 2023 - Present"
                 image={Rutgers}
-                description="Analyze bee image data using machine learning; study the impact of electromagnetic waves on bees; rewrite data pipeline for the project"
+                description="Analyze animal behavior data using machine learning; study the impact of electromagnetic waves on bees."
             />
-            <div className="w-full h-10" />
             <ResumeItem
                 title="Assistant Teacher"
                 organization="Mei Wah School"
@@ -73,7 +73,6 @@ export default function About() {
                 image={MeiWahImage}
                 description="Teach robotics and music to 30+ students; coordinate activities; set up class materials; redesign school site"
             />
-            <div className="w-full h-10 " />
 
             <ResumeItem
                 title="Assistant Beekeeper"
@@ -83,7 +82,6 @@ export default function About() {
                 description="Manage rooftop hives across the city, along with working with other aspects of NYC's environmental movement"
             />
 
-            <div className="w-full h-10 " />
 
             <ResumeItem
                 title="Assistant Beekeeper"
@@ -93,8 +91,7 @@ export default function About() {
                 description="Worked with head for beekeeping, community outreach, and grant writing."
             />
 
-            <div className="w-full h-10 " />
-``
+
             <ResumeItem
                 title="Student Teacher"
                 organization="Service in Schools Institute"
@@ -103,7 +100,6 @@ export default function About() {
                 description="Teach in a group younger students remotely about fast fashion"
             />
 
-            <div className="w-full h-10 " />
 
             {/* EDUCATION */}
             <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
@@ -121,30 +117,24 @@ export default function About() {
                 description="Rising Freshman"
             />
 
-            <div className="w-full h-10 " />
 
             <ResumeItem
                 title="High School Diploma"
                 organization="Stuyvesant High School"
                 date="Class of 2025"
                 image={StuyLogo}
-                description="Stuyvesant Environmental Club, Stuy Senior / Junior Caucus, National Honor Society, CSdojo, stuyai, Latin Classics, Big Sibs"
+                description="Student Union, National Honor Society, CSdojo, stuyai, Stuy Classics"
             />
 
-            <div className="w-full h-10 " />
 
             <ResumeItem
                 title="Beekeeping Apprenticeship"
                 organization="Astor Apiaries"
                 date="November 2021 - November 2022"
                 image={AstorApiaries}
-                description="Learned the basics of beekeeping, including hive management, honey extraction, and bee biology"
+                description="Learned basics of beekeeping, including hive management, honey extraction, and bee biology"
             />
 
-            <div className="w-full h-10 " />
-
-            {/* AWARDS */}
-            <div className="w-[00vw] h-[10vh]" />
             <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
                 <h1 className="text-4xl sm:text-5xl underline">
                     Awards
@@ -160,7 +150,6 @@ export default function About() {
                 image={NJCLlogo}
                 description="2022, 2023, 2024 Summa Cum Laude (Gold)"
             />
-            <div className="w-full h-10 " />
             <ResumeItem
                 title="National Medusa Mythology Exam"
                 organization="National Junior Classical League"
@@ -168,7 +157,6 @@ export default function About() {
                 image={NJCLlogo}
                 description="2022 Silver Medalist, 2023 Gold Medalist, 2024 Bronze Medalist"
             />
-            <div className="w-full h-10 " />
             <ResumeItem
                 title="National Etymology Exam"
                 organization="National Junior Classical League"
@@ -176,7 +164,6 @@ export default function About() {
                 image={NJCLlogo}
                 description="2023 Silver Medalist, 2024 Bronze Medalist"
             />
-            <div className="w-full h-10 " />
             <ResumeItem
                 title="National Vocabulary Exam"
                 organization="National Junior Classical League"
@@ -184,7 +171,6 @@ export default function About() {
                 image={NJCLlogo}
                 description="2024 Bronze Medalist"
             />
-            <div className="w-full h-10 " />
             <ResumeItem
                 title="UPenn Certamen"
                 organization="UPenn Classics Comittee"
@@ -192,7 +178,6 @@ export default function About() {
                 image={UPennClassics}
                 description="Semifinalist"
             />
-            <div className="w-full h-10" />
             <ResumeItem
                 title="USACO"
                 organization="USA Computing Olympiad"
@@ -200,7 +185,6 @@ export default function About() {
                 image={USACOlogo}
                 description="2022 Silver Medalist"
             />
-            <div className="w-full h-[10vh] " />
         </div>
 
 
