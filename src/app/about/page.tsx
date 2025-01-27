@@ -15,6 +15,7 @@ import AstorApiaries from "public/logos/AstorApiaries.png";
 import USACOlogo from "public/logos/USACOlogo.png";
 import HRAS from "public/logos/HRAS.jpeg";
 import ServiceInSchools from "public/logos/ServiceInSchools.png";
+import YaleCertamenLogo from "public/logos/YaleCertamenLogo.png";
 
 import NJCLlogo from "public/logos/njcl.png";
 
@@ -173,9 +174,16 @@ export default function About() {
             />
             <ResumeItem
                 title="UPenn Certamen"
-                organization="UPenn Classics Comittee"
+                organization="UPenn Classics Committee"
                 date="2024"
                 image={UPennClassics}
+                description="Semifinalist"
+            />
+               <ResumeItem
+                title="Yale Certamen"
+                organization="Yale Classics Committee"
+                date="2024"
+                image={YaleCertamenLogo}
                 description="Semifinalist"
             />
             <ResumeItem
