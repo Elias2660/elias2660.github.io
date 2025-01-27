@@ -15,7 +15,7 @@ export default function Home() {
                 Hi people of the internet, welcome to my website! I’m Elias, and I’m a bookworm, tech guy, and beekeeper. I’m currently a second semester senior at Stuyvesant High School, (and if all goes well) a rising freshman at Cornell University. I’m currently a researcher at Rutgers WINLAB, studying how machine learning can detect the behavior of untrained organisms, a beekeeper at various organizations, and a coder for different organizations :). The photo is from 2022, where I worked as an assistant beekeeper at the Brooklyn Bee Corps, which is part of City Growers.
             </p>
             {/* ! IDK if imma add a photo or not */}
-            <div className="relative flex items-start justify-center col-start-1 col-span-full row-start-3 mt-4 row-span-6 sm:col-start-1 sm:col-span-full sm:row-start-2 sm:mr-0 md:col-start-7 md:row-start-3 md:col-span-full md:mr-4 md:row-span-full lg:col-start-6 lg:col-span-6 lg:row-start-3 lg:row-span-9">
+            <div className="relative flex items-start justify-center col-start-1 col-span-full row-start-3 mt-4 row-span-6 sm:col-start-1 sm:col-span-full sm:row-start-2 sm:mr-0 md:col-start-7 md:row-start-2 md:col-span-full md:mr-4 md:row-span-full lg:col-start-6 lg:col-span-6 lg:row-start-1 lg:row-span-full">
                 <Image
                     src={PersonPhoto}
                     alt="Elias Xu"
