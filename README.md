@@ -8,7 +8,7 @@ Hi everyone! As the above title says, this website is my personal website, and i
 
 This is a `nextjs` application that is bootstrapped with `create-next-app`. There's other packages, that deal with markdown rendering (for the posts), but most of this stuff is pure next.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Inter](https://vercel.com/font).
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load `Inter`.
 
 ## To run locally
 
