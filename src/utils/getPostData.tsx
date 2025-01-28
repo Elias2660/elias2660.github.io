@@ -3,8 +3,6 @@ import fs from 'fs';
 import { remark } from 'remark';
 import html from 'remark-html';
 import matter from 'gray-matter';
-import remarkGfm from 'remark-gfm';
-import remarkBreaks from 'remark-breaks';
 
 export async function getPostData(id: string) {
     const fullPath = path.join('public/docs', `${id}.md`);
