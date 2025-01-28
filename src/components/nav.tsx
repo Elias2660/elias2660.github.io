@@ -29,8 +29,8 @@ export default function Nav() {
 
     return (<>
         <nav className="w-full h-[7vh] grid grid-cols-12 grid-rows-1 items-center">
-            <Link href="/" className={`pl-4 cols-span-2 text-xl col-start-1 row-start-1 font-bold hover:font-extrabold ${`elias@web:${pathname}`.length > 3 ? "sm:text-base md:text-xl" : ""}`}>
-                {`elias@web:${pathname}`.length > 15 ? "elias@web:/../" + pathname.split("/").slice(-1)[0] : pathname}
+            <Link href="/" className={`pl-4 cols-span-2 text-xl col-start-1 row-start-1 font-bold hover:font-extrabold ${`elias@web:${pathname}`.length > 15 ? "sm:text-base md:text-xl" : ""}`}>
+                {`elias@web:${pathname}`.length > 15 ? "elias@web:/../" + pathname.split("/").slice(-1)[0] : `elias@web:${pathname}`}
             </Link>
             <div className="items-center col-start-5 md:col-start-6 lg:col-start-8 col-end-11 row-start-1 flex justify-between">
                 <Link href="/" className="invisible sm:visible text-xl row-start-1 hover:font-bold">
