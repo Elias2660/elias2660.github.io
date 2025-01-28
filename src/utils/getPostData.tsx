@@ -19,8 +19,6 @@ export async function getPostData(id: string) {
     // Process the Markdown content
     const processedContent = await remark()
         .use(html)
-        .use(remarkGfm)
-        .use(remarkBreaks)
         .process(matterResult.content);
 
     const contentHtml = processedContent.toString();
