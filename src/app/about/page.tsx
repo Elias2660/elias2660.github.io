@@ -22,7 +22,7 @@ import NJCLlogo from "public/logos/njcl.png";
 
 export default function About() {
     return (<>
-        <div className="h-[55vh] md:h-[65vh] w-full grid grid-cols-12 grid-rows-12 ">
+        <div className="h-[35rem] md:h-[40rem] w-full grid grid-cols-12 grid-rows-12 ">
             <div className="relative inline-block ml-4 mt-4 col-start-1 col-span-full row-start-1 sm:row-start-2 row-span-1 ">
                 <h1 className="text-7xl">
                     About Me
@@ -54,7 +54,7 @@ export default function About() {
 
         {/* WORK EXPERIENCE */}
         <div className="flex flex-col items-center justify-center w-full">
-            <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
+            <div className="relative inline-block w-full h-[5rem] pt-4 pl-10">
                 <h1 className="text-4xl sm:text-5xl underline">
                     Work Experience
                 </h1>
@@ -103,7 +103,7 @@ export default function About() {
 
 
             {/* EDUCATION */}
-            <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
+            <div className="relative inline-block w-full h-[5rem] pt-4 pl-10">
                 <h1 className="text-4xl sm:text-5xl underline">
                     Education
                 </h1>
@@ -136,7 +136,7 @@ export default function About() {
                 description="Learned basics of beekeeping, including hive management, honey extraction, and bee biology"
             />
 
-            <div className="relative inline-block w-full h-[10vh] pt-4 pl-10">
+            <div className="relative inline-block w-full h-[5rem] pt-4 pl-10">
                 <h1 className="text-4xl sm:text-5xl underline">
                     Awards
                 </h1>

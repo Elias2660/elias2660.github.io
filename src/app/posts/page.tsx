@@ -6,7 +6,7 @@ import WebsiteImage from "public/docImages/WebsiteHeader.png";
 
 export default function Posts() {
     return (<>
-        <div className="w-full h-[10vh] grid grid-cols-12 grid-rows-12 ">
+        <div className="w-full h-[6rem] grid grid-cols-12 grid-rows-12 ">
             <div className="ml-4 md:ml-0 relative inline-block z-10 col-start-1 col-end-4 row-start-1 align-middle text-center">
                 <div className="relative inline-block">
                     <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl align-middle">Posts</h1>

@@ -28,7 +28,7 @@ export default function Nav() {
     useEffect(() => setMounted(true), [])
 
     return (<>
-        <nav className="w-full h-[7vh] grid grid-cols-12 grid-rows-1 items-center">
+        <nav className="w-full h-12 grid grid-cols-12 grid-rows-1 items-center">
             <Link href="/" className={`pl-4 cols-span-2 text-xl col-start-1 row-start-1 font-bold hover:font-extrabold ${`elias@web:${pathname}`.length > 20 ? "sm:text-base md:text-xl" : ""}`}>
                 {`elias@web:${pathname}`.length > 20 ? "elias@web:/../" + pathname.split("/").slice(-1)[0] : `elias@web:${pathname}`}
             </Link>

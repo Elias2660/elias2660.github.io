@@ -6,7 +6,7 @@ import PersonPhoto from "public/ProfilePic.png"
 
 export default function Home() {
     return (
-        <div className="w-full h-[90vh] grid grid-cols-12 grid-rows-12 ">
+        <div className="w-full h-[40rem] grid grid-cols-12 grid-rows-12 ">
             <div className="relative inline-block z-10 ml-4 col-start-1 col-span-full row-start-2 sm:row-start-1 row-span-2 md:col-start-1 md:col-span-full md:row-start-3 md:row-span-1 md:ml-4 lg:col-start-1 lg:col-end-10 lg:row-start-3">
                 <h1 className="text-5xl sm:text-6xl z-30">Hi, I&apos;m Elias! </h1>
                 <span className="gap-x-0 mt-6 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-yellow-300 h-5 w-[17rem] sm:w-[22rem]" />
