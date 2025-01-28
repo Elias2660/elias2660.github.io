@@ -11,7 +11,7 @@ interface ProjectItemProps {
 export default function ProjectItem(props: ProjectItemProps) {
     return (<div className="w-[90vw] h-[30rem] md:h-[15rem] m-2 border-2 border-black dark:border-white rounded-sm grid grid-cols-12 grid-rows-12">
         <div className=" col-start-1 row-start-1 md:col-start-1 md:row-start-1 relative row-span-7 md:row-span-full col-span-full md:col-span-5 flex justify-center items-center">
-            <Image src={props.image} alt={props.title} layout="fill" className="h-full w-auto p-4 object-contain" />
+            <Image src={props.image} alt={props.title} className="h-full w-auto p-4 object-contain" />
         </div>
         <div className="col-start-1 col-span-full row-start-8 md:col-start-6 md:row-start-2 flex justify-center md:justify-normal" >
             <p className={`underline ${props.title.length > 13 ? 'text-2xl md:text-3xl lg:text-4xl' : 'text-4xl md:text-4xl lg:text-5xl'} font-bold`}>
