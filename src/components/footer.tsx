@@ -41,22 +41,23 @@ export default function Footer() {
                 <Link href="/portfolio" className="hover:font-bold">/portfolio</Link>
                 <Link href="/posts" className="hover:font-bold">/posts</Link>
             </div>
+            <a href="https://github.com/Elias2660/elias2660.github.io" className="group col-start-1 sm:col-start-1 md:col-start-1 lg:col-start-1 col-span-full row-start-9 row-span-1 text-center flex justify-center flex-row ">
+                <p className="group-hover:font-extrabold text-xs font-semibold inline underline">
+                    Check out the website&apos;s source code!
+                </p>
+                <Image src={UpRightArrow} alt="Up Right Arrow" className=" group-hover:-translate-y-1 w-4 h-4 dark:invert inline" />
+            </a>
             <div className="col-start-1 col-span-full row-start-11 row-span-1 text-center">
                 <p className="text-sm font-semibold">© {year} Elias Xu</p>
             </div>
             <div className="col-start-1 col-span-full row-start-12 row-span-1 text-center">
                 <p className="text-sm font-semibold">All rights reserved</p>
             </div>
-            <a href="https://github.com/Elias2660/elias2660.github.io" className="group col-start-11 sm:col-start-11 md:col-start-12 lg:col-start-12 col-span-full row-start-12 row-span-1 text-left">
-                <p className="group-hover:font-extrabold text-sm font-semibold inline underline">
-                    Source
-                </p>
-                <Image src={UpRightArrow} alt="Up Right Arrow" className="invisible group-hover:visible group-hover:-translate-y-1 w-4 h-4 dark:invert inline" />
-            </a>
+
         </footer ></>);
 }
 
-function jump(h:string) {
+function jump(h: string) {
     const target = document.getElementById(h);
     if (target) {
         target.scrollIntoView({ behavior: 'smooth' });

@@ -24,7 +24,7 @@ export default function Posts() {
                 title="The Readme for this Website"
                 image={WebsiteImage}
                 description="Here's the readme for the website, btw."
-                id="thisreadme"
+                id="readme"
             />
             <PostBox
                 title="First Test Post"
