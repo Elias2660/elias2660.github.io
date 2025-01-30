@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss';
 @tailwind utilities;
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 .post-content {
     font-weight: default;
