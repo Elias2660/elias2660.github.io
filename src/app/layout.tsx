@@ -29,8 +29,8 @@ export default function RootLayout({
             <head>
                 <link
                     rel="icon"
-                    href="/icon?<generated>"
-                    type="image/<generated>"
+                    href="/icon.webp"
+                    type="image/webp"
                     sizes="<generated>"
                 />
             </head>

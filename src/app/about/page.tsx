@@ -1,23 +1,23 @@
-import Rutgers from "public/logos/rutgers.png";
+import Rutgers from "public/logos/rutgers.webp";
 import ResumeItem from "@/components/resumeItem";
 import Insta from "public/instagram.svg";
 import Linkedin from "public/linkedin.svg";
 import Github from "public/github.svg";
 import Facebook from "public/facebook.svg";
 import Image from "next/image";
-import Sunset from "public/sunset.jpg"
-import MeiWahImage from "public/logos/MeiWah.png";
-import CityGrowers from "public/logos/city_growers.png";
+import Sunset from "public/sunset.webp"
+import MeiWahImage from "public/logos/MeiWah.webp";
+import CityGrowers from "public/logos/city_growers.webp";
 import StuyLogo from "public/logos/Stuyvesant_High_School_logo.svg";
-import UPennClassics from "public/logos/UPennClassics.png";
-import CornellLogo from "public/logos/cornell.png";
-import AstorApiaries from "public/logos/AstorApiaries.png";
-import USACOlogo from "public/logos/USACOlogo.png";
-import HRAS from "public/logos/HRAS.jpeg";
-import ServiceInSchools from "public/logos/ServiceInSchools.png";
-import YaleCertamenLogo from "public/logos/YaleCertamenLogo.png";
+import UPennClassics from "public/logos/UPennClassics.webp";
+import CornellLogo from "public/logos/cornell.webp";
+import AstorApiaries from "public/logos/AstorApiaries.webp";
+import USACOlogo from "public/logos/USACOlogo.webp";
+import HRAS from "public/logos/HRAS.webp";
+import ServiceInSchools from "public/logos/ServiceInSchools.webp";
+import YaleCertamenLogo from "public/logos/YaleCertamenLogo.webp";
 
-import NJCLlogo from "public/logos/njcl.png";
+import NJCLlogo from "public/logos/njcl.webp";
 
 
 export default function About() {

@@ -2,7 +2,7 @@
 
 // import GrayBox from "public/grey.jpg";
 import Image from "next/image";
-import PersonPhoto from "public/ProfilePic.png"
+import PersonPhoto from "public/ProfilePic.webp"
 
 export default function Home() {
     return (
@@ -17,6 +17,7 @@ export default function Home() {
             {/* ! IDK if imma add a photo or not */}
             <div className="relative flex items-start justify-center col-start-1 col-span-full row-start-3 row-span-6 sm:col-start-1 sm:col-span-full sm:row-start-2 sm:mr-0 md:col-start-7 md:row-start-2 md:col-span-full md:mr-4 md:row-span-full lg:col-start-6 lg:col-span-6 lg:row-start-1 lg:row-span-full">
                 <Image
+                    priority
                     src={PersonPhoto}
                     alt="Elias Xu"
                     width={500}

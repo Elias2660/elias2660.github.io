@@ -3,16 +3,16 @@
 // import Sun from "public/Sun.svg";
 
 "use client"
-import Moon from "public/Moon.png";
-import Sun from "public/Sun.png";
+import Moon from "public/Moon.webp";
+import Sun from "public/Sun.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from 'next/navigation'
-import darkMenu from "public/darkMenu.png";
-import lightMenu from "public/lightMenu.png";
+import darkMenu from "public/darkMenu.webp";
+import lightMenu from "public/lightMenu.webp";
 import { useTheme } from "next-themes";
-import Blank from "public/Blank.png";
+import Blank from "public/Blank.webp";
 
 export default function Nav() {
     const [mounted, setMounted] = useState(false)

@@ -1,9 +1,9 @@
 
 import ProjectItem from "@/components/ProjectItem";
-import SeniorCaucusWebsite from "public/portfolio/Senior_Caucus_Website.png";
-import RutgersBeeImage from "public/portfolio/BeeZ.png";
-import JuniorCaucusWebsite from "public/portfolio/JuniorCaucusWeb.png";
-import ProompterImage from "public/portfolio/Proompter.png";
+import SeniorCaucusWebsite from "public/portfolio/Senior_Caucus_Website.webp";
+import RutgersBeeImage from "public/portfolio/BeeZ.webp";
+import JuniorCaucusWebsite from "public/portfolio/JuniorCaucusWeb.webp";
+import ProompterImage from "public/portfolio/Proompter.webp";
 
 export default function Portfolio() {
     return (<>

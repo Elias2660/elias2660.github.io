@@ -1,7 +1,7 @@
 // https://nextjs.org/learn-pages-router/basics/dynamic-routes/render-markdown
 import PostBox from "@/components/PostBox";
-import Panda from "public/docImages/Proompter.png";
-import WebsiteImage from "public/docImages/WebsiteHeader.png";
+import Panda from "public/docImages/Proompter.webp";
+import WebsiteImage from "public/docImages/WebsiteHeader.webp";
 
 
 export default function Posts() {
