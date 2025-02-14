@@ -12,7 +12,12 @@ export default function Home() {
                 <span className="gap-x-0 mt-6 sm:mt-10 absolute opacity-75 inset-0 bottom-1 -z-10 bg-yellow-300 h-5 w-[17rem] sm:w-[22rem]" />
             </div>
             <p className="grid z-10 col-start-1 col-span-full ml-4 mt-4 text-sm  sm:text-base row-start-9 row-span-full sm:col-start-2 sm:col-end-11 sm:mt-2 sm:row-start-8 md:col-start-1  mr-0  md:col-end-7 md:mr-2 md:row-start-4 md:row-end-10 md:text-xl md:ml-4 lg:row-start-4 lg:row-end-11 lg:col-start-1 lg:col-end-6 lg:mr-4 lg:ml-4 font-light">
-                Hi people of the internet, welcome to my website! I’m Elias, and I’m a bookworm, tech guy, and beekeeper. I’m currently a second semester senior at Stuyvesant High School, (and if I don&apos;t get recinded) a rising freshman at Cornell University. I’m currently a researcher at Rutgers WINLAB, studying how machine learning can detect the behavior of untrained organisms, a beekeeper at various organizations, and a coder for different organizations :). The photo is from 2022, where I worked as an assistant beekeeper at the Brooklyn Bee Corps, which is part of City Growers.
+                Hi people of the internet, welcome to my website! I’m Elias, and I’m a bookworm, tech guy,
+                and beekeeper. I’m currently a second semester senior at Stuyvesant High School,
+                (and if I don&apos;t get recinded) a rising freshman at Cornell University. I&apos;m currently part of a
+                research program at Rutgers WINLAB, studying how machine learning can detect the behavior of untrained organisms,
+                a beekeeper at various places, and a coder who likes wierd projects :).
+                The photo is from 2022, where I worked as an assistant beekeeper at the Brooklyn Bee Corps, which is part of City Growers.
             </p>
             {/* ! IDK if imma add a photo or not */}
             <div className="relative flex items-start justify-center col-start-1 col-span-full row-start-3 row-span-6 sm:col-start-1 sm:col-span-full sm:row-start-2 sm:mr-0 md:col-start-7 md:row-start-2 md:col-span-full md:mr-4 md:row-span-full lg:col-start-6 lg:col-span-6 lg:row-start-1 lg:row-span-full">
