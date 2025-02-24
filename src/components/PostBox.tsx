@@ -16,7 +16,7 @@ export default function PostBox(props:PostBoxProps) {
             <Image src={props.image} alt={props.title} layout="fill" className="p-4 object-contain" />
         </div>
         <div className="col-start-1 col-span-full row-start-8 row-span-1 md:col-start-5 md:row-start-2 flex justify-center md:justify-normal" >
-            <p className={`underline ${props.title.length > 20 ? 'text-2xl md:text-3xl lg:text-4xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-semibold`}>
+            <p className={`text-center underline ${props.title.length > 20 ? 'text-[1.3em] md:text-3xl lg:text-4xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-semibold`}>
                 {props.title}
             </p>
         </div>
@@ -26,8 +26,8 @@ export default function PostBox(props:PostBoxProps) {
             </p>
         </div>
 
-        <div className="group col-start-10 md:col-start-5 col-span-full md:col-span-full row-start-12 md:row-start-11 row-span-3">
-            <Link className="flex flex-row align-middle items-center" href={`/posts/${props.id}`}>
+        <div className="group col-start-6 md:col-start-5 col-span-full md:col-span-full row-start-12 md:row-start-11 row-span-3">
+            <Link className="flex flex-row items-center justify-end" href={`/posts/${props.id}`}>
                 <p className="group-hover:font-bold underline font-light text-xl md:text-base lg:text-xl">Check Out</p>
                 <Image src={UpRightArrow} alt="arrow" className="dark:invert w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 group-hover:-translate-y-1" />
             </Link>
