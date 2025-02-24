@@ -16,6 +16,7 @@ import Blank from "public/Blank.webp";
 
 export default function Nav() {
     const [mounted, setMounted] = useState(false)
+    const [dropdownOpen, setDropdownOpen] = useState(false)
     const { setTheme, resolvedTheme } = useTheme()
 
 
@@ -69,7 +70,7 @@ export default function Nav() {
             </button>
             {/* the dropdown */}
             <div className="visible sm:invisible group inline-block relative col-start-12 row-start-1">
-                <button className="visible sm:invisible" >
+                <button className="visible sm:invisible" onClick={() => setDropdownOpen(true)} >
                     {
                         !mounted &&
                         <Image
@@ -90,20 +91,20 @@ export default function Nav() {
                         />
                     }
                 </button>
-                <div className="invisible group-hover:visible absolute right-1 p-3 rounded-sm bg-white dark:bg-black z-50">
-                    <Link href="/" className="text-xl block hover:font-bold">
+                {dropdownOpen && <div className="invisible group-hover:visible absolute right-1 p-3 rounded-sm bg-white dark:bg-black z-50">
+                    <Link href="/" className="text-xl block hover:font-bold"  onClick={() => setDropdownOpen(false)}>
                         /
                     </Link>
-                    <Link href="/about" className=" text-xl block hover:font-bold">
+                    <Link href="/about" className=" text-xl block hover:font-bold" onClick={() => setDropdownOpen(false)}>
                         /about
                     </Link>
-                    <Link href="/portfolio" className=" text-xl block hover:font-bold">
+                    <Link href="/portfolio" className=" text-xl block hover:font-bold" onClick={() => setDropdownOpen(false)}>
                         /portfolio
                     </Link>
-                    <Link href="/posts" className=" text-xl block hover:font-bold">
+                    <Link href="/posts" className=" text-xl block hover:font-bold" onClick={() => setDropdownOpen(false)}>
                         /posts
                     </Link>
-                </div>
+                </div>}
             </div>
         </nav>
     </>)
