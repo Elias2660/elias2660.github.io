@@ -13,9 +13,9 @@ export default function ProjectItem(props: ProjectItemProps) {
         <div className=" col-start-1 row-start-1 md:col-start-1 md:row-start-1 relative row-span-7 md:row-span-full col-span-full md:col-span-5 flex justify-center items-center">
             <Image src={props.image} alt={props.title} className="h-full w-auto p-4 object-contain" />
         </div>
-        <div className="flex items-center col-start-1 col-span-full row-start-8 md:col-start-6 md:row-start-2 justify-center">
-            <p className={`underline text-center ${props.title.length > 13 ? 'text-2xl md:text-3xl lg:text-4xl' : 'text-4xl md:text-4xl lg:text-5xl'} font-bold`}>
-                {props.title}
+        <div className="flex col-start-1 flex-row justify-center md:justify-start col-span-full row-start-8 md:col-start-6 md:row-start-2">
+            <p className={`underline lg:text-left ${props.title.length > 13 ? 'text-2xl md:text-3xl lg:text-4xl' : 'text-4xl md:text-4xl lg:text-5xl'} font-bold`}>
+            {props.title}
             </p>
         </div>
         <div className="p-4 md:p-0 flex justify-center text-center md:block md:text-left col-start-1 md:col-start-6 col-span-full row-start-9 md:row-start-5 row-span-8">
