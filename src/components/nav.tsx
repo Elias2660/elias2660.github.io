@@ -91,7 +91,7 @@ export default function Nav() {
                         />
                     }
                 </button>
-                {dropdownOpen && <div className="invisible group-hover:visible absolute right-1 p-3 rounded-sm bg-white dark:bg-black z-50">
+                {dropdownOpen && <div className="absolute right-1 p-3 rounded-sm bg-white dark:bg-black z-50">
                     <Link href="/" className="text-xl block hover:font-bold"  onClick={() => setDropdownOpen(false)}>
                         /
                     </Link>
