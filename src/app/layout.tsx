@@ -18,14 +18,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
     children,
-    themeClass,
-}: Readonly<{
+}: {
     children: React.ReactNode;
-    themeClass: string;
-}>) {
+}) {
 
     return (
-        <html id="top" lang="en" className={themeClass} suppressHydrationWarning>
+        <html id="top" lang="en" suppressHydrationWarning>
             <head>
                 <link
                     rel="icon"
