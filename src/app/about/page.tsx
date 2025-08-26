@@ -63,7 +63,7 @@ export default function About() {
             <ResumeItem
                 title="Researcher"
                 organization="Rutgers WINLAB (Wireless Information Network Laboratory)"
-                date="August 2023 - Present"
+                date="August 2023 - August 2025"
                 image={Rutgers}
                 description="Analyze animal behavior data using machine learning; study the impact of electromagnetic waves on bees."
             />
@@ -87,7 +87,7 @@ export default function About() {
             <ResumeItem
                 title="Assistant Beekeeper"
                 organization="Hudson River Apiary Society"
-                date="June 2022 - Present"
+                date="June 2022 - August 2024"
                 image={HRAS}
                 description="Worked with head for beekeeping, community outreach, and grant writing."
             />
